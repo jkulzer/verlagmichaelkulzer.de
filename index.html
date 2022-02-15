@@ -2,40 +2,59 @@
 <html lang="en">
 	<head>
 		<title>Verlag Michael Kulzer</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
-
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
 
 		<!--- Titel --->
 		<div class="container pt-2">
-			<div class="container display-1 pt-2 pb-1 bg-primary text-white rounded">
+			<div class="container jumbotron display-1 pb-2 pt-3 rounded">
 				<h1>
+				<img class="" src="lotus-white.png" alt="Logo Lotusblume" width="50" height="50">
 					Verlag Michael Kulzer
 				</h1>
 			</div>
 		</div>
 
 		<!--- Subtitel-->
-		<div class="container pt-3 h2">
-			<h2>
-				Info
-			</h2>
+		<div class="container pt-4">
+			<div class="container row">
+				<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+					<h2>
+						Über den Verlag
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Sed voluptatum quod repellendus fuga dolorum possimus veritatis adipisci quam obcaecati eius cum at, repudiandae, omnis laboriosam sequi commodi ut sapiente. 
+						Explicabo?
+					</p>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6">
+					<h2>
+						Über Astrid Bihari
+					</h2>
+					<p>
+						Astrid Bihari stammt aus Mecklenburg und lebt heute in einer kleinen bayrischen Stadt.
+						Neben ihrer schriftstellerischen Tätigkeit ist sie mit Übersetzungen englischsprachiger Literatur beschäftigt.
+					</p>
+				</div>
+			</div>
 		</div>
+
+
 		<!--- Infotext -->
-		<div class="container">
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-					Beatae, porro eaque quae repellendus corrupti, dolorem, dicta rerum laudantium corporis consequatur earum culpa! 
-					Repellendus adipisci culpa cupiditate quaerat similique iste repudiandae?
-				</p>
+		<div class="container text-center pt-4">
 
 				<button id="zu-kontaktinfos" type="button" class="btn btn-primary">
 					Zu den Kontaktinfos
@@ -51,7 +70,7 @@
 					<!--- Kleiner Stern-->
 					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
 						<div class="card bg-primary">
-							<img class="card-img-top" src="buch.png" alt="Card image">
+							<img class="card-img-top" src="covers/kleiner-stern-low.jpg" alt="Card image">
 							<div class="card-header">
 
 
@@ -69,6 +88,9 @@
 									<!-- Beschreibung-->
 										<div id="beschreibung_1" class="accordion-collapse collapse" aria-labelledby="beschreibung_1" data-bs-parent="#beschreibung_1">
 											<div class="accordion-body">
+												<h5>
+													Von Astrid Bihari
+												</h5>
 												<p>
 													Aus einem Lächeln Gottes entsteht am Beginn der Welten ein kleiner Stern, der eine große Aufgabe zu erfüllen hat. 
 													Er muss jedoch viele Erfahrungen machen, bevor er als strahlender Stern der Verheißung über den Hirtenfeldern von Betlehem leuchten kann.
@@ -78,6 +100,13 @@
 													Es wäre schade, diese Erzählung, die nun bereits in vierter Auflage vorliegt, nur an Adventsabenden zu lesen.
 													Wenn man Trost nötig hat oder jemandem eine Freude machen möchte, dann ist es die richtige Zeit, dieses Büchlein hervorzuholen.
 												</p>
+
+												<h4>
+													8.95€
+												</h4>
+												<p>
+													ISBN: 3-9802176-2-0
+												</p>
 											</div>
 										</div>
 
@@ -85,32 +114,6 @@
 								  </div>
 							</div>
 							
-							<!-- Autor dropdown -->
-							<div class="card-footer">
-								<div class="accordion" id="Buchautor_1">
-
-									<div class="accordion-item">
-										
-										<!-- Autor -->
-										<h2 class="accordion-header" id="Buchautor_1">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#autor_1" aria-expanded="false" aria-controls="autor_1">
-												von Astrid Bihari
-											</button>
-										</h2>
-
-									<!-- Lebenslauf Autor -->
-										<div id="autor_1" class="accordion-collapse collapse" aria-labelledby="autor_1" data-bs-parent="#autor_1">
-											<div class="accordion-body">
-													Astrid Bihari stammt aus Mecklenburg und lebt heute in einer kleinen bayrischen Stadt.
-													Neben ihrer schriftstellerischen Tätigkeit ist sie mit Übersetzungen englischsprachiger Literatur beschäftigt.
-											</div>
-										</div>
-
-										</div>
-								  </div>
-
-							</div>
-							<!-- Autor -->
 
 						  </div>
 
@@ -121,7 +124,7 @@
 					<!--- Abendgold -->
 					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
 						<div class="card bg-primary">
-							<img class="card-img-top" src="buch.png" alt="Card image">
+							<img class="card-img-top" src="covers/abendgold-low.jpg" alt="Card image">
 							<div class="card-header">
 
 
@@ -139,6 +142,9 @@
 									<!-- Beschreibung-->
 										<div id="beschreibung_2" class="accordion-collapse collapse" aria-labelledby="beschreibung_2" data-bs-parent="#beschreibung_2">
 											<div class="accordion-body">
+												<h5>
+													Von Astrid Bihari
+												</h5>
 												<p>
 													Nach seinem letzten großen Konzert begegnet der Pianist Anton Lorenz der jungen Amélie Sommerberg.
 													Sie erfährt von ihm die ungewöhnliche Geschichte der Liebe zwischen ihrer Mutter und dem berühmten Künstler.
@@ -148,6 +154,12 @@
 													"Abendgold" ist keine Liebesgeschichte im alltäglichen Sinne.
 													Astrid Bihari schreibt über eine Liebe, die sich in der äußeren Getrenntheit der Liebenden erfüllt.
 												</p>
+												<h4>
+													8.95€
+												</h4>
+												<p>
+													ISBN: 3-9802176-3-9
+												</p>
 											</div>
 										</div>
 
@@ -155,32 +167,6 @@
 								  </div>
 							</div>
 							
-							<!-- Autor dropdown -->
-							<div class="card-footer">
-								<div class="accordion" id="Buchautor_2">
-
-									<div class="accordion-item">
-										
-										<!-- Autor -->
-										<h2 class="accordion-header" id="Buchautor_2">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#autor_2" aria-expanded="false" aria-controls="autor_2">
-												von Astrid Bihari
-											</button>
-										</h2>
-
-									<!-- Lebenslauf Autor -->
-										<div id="autor_2" class="accordion-collapse collapse" aria-labelledby="autor_2" data-bs-parent="#autor_2">
-											<div class="accordion-body">
-													Astrid Bihari stammt aus Mecklenburg und lebt heute in einer kleinen bayrischen Stadt.
-													Neben ihrer schriftstellerischen Tätigkeit ist sie mit Übersetzungen englischsprachiger Literatur beschäftigt.
-											</div>
-										</div>
-
-										</div>
-								  </div>
-
-							</div>
-							<!-- Autor -->
 
 						  </div>
 
@@ -191,7 +177,7 @@
 					<!--- Weg durch einen alten Garten -->
 					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
 						<div class="card bg-primary">
-							<img class="card-img-top" src="buch.png" alt="Card image">
+							<img class="card-img-top" src="covers/weg-garten-low.jpg" alt="Card image">
 							<div class="card-header">
 
 
@@ -209,6 +195,9 @@
 									<!-- Beschreibung-->
 										<div id="beschreibung_3" class="accordion-collapse collapse" aria-labelledby="beschreibung_3" data-bs-parent="#beschreibung_3">
 											<div class="accordion-body">
+												<h5>
+													Von Astrid Bihari
+												</h5>
 												<p>
 													Britta ist ein junges Mädchen, das von der Liebe träumt.
 													Obwohl sie weiß, dass sie sich mit ihren Vorstellungen in einer Welt zurechtfinden muss, die nur wenige Märchen bereithalten, mag sie ihre Träume nicht aufgeben.
@@ -223,6 +212,13 @@
 													Astrid Biharis Erzählung möchte junge Menschen ermutigen, ihren Traum von der Liebe weiterzuträumen. 
 													Sie hat etwas zu tun mit Behutsamkeit, Selbstlosigkeit und Wartenkönnen.
 												</p>
+												<h4>
+													8.95€
+												</h4>
+												<p>
+													ISBN: 3-9802176-7-1
+												</p>
+
 											</div>
 										</div>
 
@@ -230,30 +226,6 @@
 								  </div>
 							</div>
 							
-							<!-- Autor dropdown -->
-							<div class="card-footer">
-								<div class="accordion" id="Buchautor_3">
-
-									<div class="accordion-item">
-										
-										<!-- Autor -->
-										<h2 class="accordion-header" id="Buchautor_3">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#autor_3" aria-expanded="false" aria-controls="autor_3">
-												von Astrid Bihari
-											</button>
-										</h2>
-
-									<!-- Lebenslauf Autor -->
-										<div id="autor_3" class="accordion-collapse collapse" aria-labelledby="autor_3" data-bs-parent="#autor_3">
-											<div class="accordion-body">
-													Astrid Bihari stammt aus Mecklenburg und lebt heute in einer kleinen bayrischen Stadt.
-													Neben ihrer schriftstellerischen Tätigkeit ist sie mit Übersetzungen englischsprachiger Literatur beschäftigt.
-											</div>
-										</div>
-										</div>
-								  </div>
-							</div>
-							<!-- Autor -->
 						  </div>
 						</div>
 						
@@ -261,7 +233,7 @@
 					<!--- Eines Herzens Lied -->
 					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
 						<div class="card bg-primary">
-							<img class="card-img-top" src="buch.png" alt="Card image">
+							<img class="card-img-top" src="covers/herzens-lied-low.jpg" alt="Card image">
 							<div class="card-header">
 
 
@@ -279,6 +251,9 @@
 									<!-- Beschreibung-->
 										<div id="beschreibung_4" class="accordion-collapse collapse" aria-labelledby="beschreibung_4" data-bs-parent="#beschreibung_4">
 											<div class="accordion-body">
+												<h5>
+													Von Astrid Bihari
+												</h5>
 												<p>
 													"Eines Herzens Lied" war die erste Veröffentlichung von Astrid Bihari.
 													Der Band erscheint nun in zweiter Auflage und ist um einige neue Gedichte der Autorin erweitert
@@ -287,6 +262,12 @@
 												<p>
 													Dieses Buch beschenkt den Leser immer wieder durch die Schönheit der Gedanken und der Sprache.
 												</p>
+												<h4>
+													16.50€
+												</h4>
+												<p>
+													ISBN: 3-9802176-0-4
+												</p>
 											</div>
 										</div>
 
@@ -294,39 +275,13 @@
 								  </div>
 							</div>
 							
-							<!-- Autor dropdown -->
-							<div class="card-footer">
-								<div class="accordion" id="Buchautor_4">
-
-									<div class="accordion-item">
-										
-										<!-- Autor -->
-										<h2 class="accordion-header" id="Buchautor_4">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#autor_4" aria-expanded="false" aria-controls="autor_4">
-												von Astrid Bihari
-											</button>
-										</h2>
-
-									<!-- Lebenslauf Autor -->
-										<div id="autor_4" class="accordion-collapse collapse" aria-labelledby="autor_4" data-bs-parent="#autor_4">
-											<div class="accordion-body">
-													Astrid Bihari stammt aus Mecklenburg und lebt heute in einer kleinen bayrischen Stadt.
-													Neben ihrer schriftstellerischen Tätigkeit ist sie mit Übersetzungen englischsprachiger Literatur beschäftigt.
-											</div>
-										</div>
-
-										</div>
-								  </div>
-
-							</div>
-							<!-- Autor -->
 						  </div>
 						</div>
 	
 					<!--- Einer von Hause Lesa -->
 					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
 						<div class="card bg-primary">
-							<img class="card-img-top" src="buch.png" alt="Card image">
+							<img class="card-img-top" src="covers/hause-lesa-low.jpg" alt="Card image">
 							<div class="card-header">
 
 
@@ -367,6 +322,12 @@
 												<p>
 													Johanna Spyri erfüllt die Erzählung aber auch mit losgelöster Lebensfreude.
 													Sie beschwört nicht nur die gute alte Zeit, sondern weckt in dem Leser eine innere Gelassenheit, die zu allen Zeiten die Menschen fröhlich machen konnte.
+												</p>
+												<h4>
+													16.50€
+												</h4>
+												<p>
+													ISBN: 3-9802176-6-3
 												</p>
 											</div>
 										</div>
@@ -411,7 +372,199 @@
 						  </div>
 						</div>
 
+					<!--- Das Maerchen vom Rosenstrauch-->
+					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
+						<div class="card bg-primary">
+							<img class="card-img-top" src="covers/rosenstrauch-low.jpg" alt="Card image">
+							<div class="card-header">
 
+
+								<div class="accordion" id="Buch_6">
+
+									<div class="accordion-item">
+										
+										<!-- Titel -->
+										<h2 class="accordion-header" id="Buchtitel_6">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beschreibung_6" aria-expanded="false" aria-controls="beschreibung_6">
+												Das Märchen vom Rosenstrauch
+											</button>
+										</h2>
+
+									<!-- Beschreibung-->
+										<div id="beschreibung_6" class="accordion-collapse collapse" aria-labelledby="beschreibung_6" data-bs-parent="#beschreibung_6">
+											<div class="accordion-body">
+												<h5>
+													Von Astrid Bihari
+												</h5>
+												<p>
+													Ein Königssohn, der das Reich seines Vaters kennenlernen soll, kommt nach vielen Jahren der Wanderung zu einem alten Mann, der in seinem großen Garten einen besonderen Rosenstrauch hütet und pflegt.
+													Durch die letzte Rosenblüte erfährt der Prinz das Geheimnis des reinen Herzens.
+												</p>
+
+												<p>
+													Dieses Märchen wird alle erfreuen, die ihre Sehnsucht nach dem scheinbar Unerreichbaren nicht aufgegeben haben.
+												</p>
+												<h4>
+													8.95€
+												</h4>
+												<p>
+													ISBN: 3-9802176-5-5
+												</p>
+											</div>
+										</div>
+										</div>
+								  </div>
+							</div>
+						  </div>
+						</div>
+
+					<!--- Bilder einer Fahrt in den Morgen -->
+					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
+						<div class="card bg-primary">
+							<img class="card-img-top" src="covers/fahrt-morgen-low.jpg" alt="Card image">
+							<div class="card-header">
+
+
+								<div class="accordion" id="Buch_8">
+
+									<div class="accordion-item">
+										
+										<!-- Titel -->
+										<h2 class="accordion-header" id="Buchtitel_8">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beschreibung_8" aria-expanded="false" aria-controls="beschreibung_8">
+												Bilder einer Fahrt in den Morgen
+											</button>
+										</h2>
+
+									<!-- Beschreibung-->
+										<div id="beschreibung_8" class="accordion-collapse collapse" aria-labelledby="beschreibung_8" data-bs-parent="#beschreibung_8">
+											<div class="accordion-body">
+												<h5>
+													Von Christina Gahlen
+												</h5>
+												<p>
+													Bei einer nächtlichen Bahnfahrt erzählt Manfred, ein junger Mann von Anfang Zwanzig, die Geschichte seines bisherigen Lebens als Punk.
+													Während draußen die dunkle Landschaft vorbeigleitet, rollen vor dem Zuhörer farbige, mit Freimut und Intensität dargestellte Bilder ab: 
+													Erlebnisse mit Mädchen und mit Drogen, eine erste Liebe, Erfahrungen mit der mehr oder weniger verständnisvollen Familie, mit Freunden und mit Gegnern, aber auch mit Literatur, Architektur und Musik; 
+													später die entscheidenden Begegnungen, die seinem Leben die Richtung geben.
+												</p>
+													Manfred erzählt von Sehnsüchten und Verrücktheiten, von Abgründen und Höhepunkten. 
+													Das Wichtigste ist: 
+													Er versucht herauszufinden, was hinter diesem verwirrenden Spiel steckt. 
+													Dabei entdeckt er zu seinem Staunen, dass sich so etwas wie ein roter Faden konsequent durch sein Leben zieht und dass jedes Erlebnis einen eigenen Sinn hat. 
+													Das gibt ihm Kraft, sich trotz innerer und äußerer Widerstände herauszuarbeiten aus den Abhängigkeiten der Vergangenheit.
+												<p>
+													Dies ist ein deutliches Buch, aber es ist auch ein schönes Buch. 
+													Wir gewinnen Einblick in die äußere Wirklichkeit und den dahinterstehenden Lebenstraum eines offenen und intelligenten jungen Menschen.
+													Bei aller Individualität ist er doch typisch für seine Altersgenossen und ihr Fragen und Suchen nach dem Sinn dieses Lebens.
+													Und Manfred macht nachdrücklich klar, dass seine Lebensbilder uns angehen.
+													Denn wir alle sind Mitreisende dieser jungen Generation bei ihrer Fahrt in den Morgen!
+												</p>
+												<h4>
+													11.50€
+												</h4>
+												<p>
+													ISBN: 3-9802176-8-X
+												</p>
+											</div>
+										</div>
+										</div>
+								  </div>
+							</div>
+						  </div>
+						</div>
+						<!--- Ende -->
+
+					<!--- Astrid Bihari liest Kleiner Stern und 12 Gedichte-->
+					<div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 col-xxl-4 pt-4">
+						<div class="card bg-primary">
+							<div class="card-header">
+								<div id="kleiner-stern-cd" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+									  <div class="carousel-item active" data-interval="1000000000">
+										<img src="covers/stern-cd-1-low.jpg" class="d-block w-100" alt="...">
+									  </div>
+									  <div class="carousel-item" data-interval="1000000000">
+										<img src="covers/stern-cd-2-low.jpg" class="d-block w-100" alt="...">
+									  </div>
+									  <div class="carousel-item" data-interval="1000000000">
+										<img src="covers/stern-cd-3-low.jpg" class="d-block w-100" alt="...">
+									  </div>
+									  <div class="carousel-item" data-interval="1000000000">
+										<img src="covers/stern-cd-4-low.jpg" class="d-block w-100" alt="...">
+									  </div>
+									</div>
+								  </div>
+							</div>
+
+							<div class="card-body">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination">
+									  <li class="page-item"><a class="page-link" href="#kleiner-stern-cd" data-slide="prev">Vorheriges Bild</a></li>
+									  <li class="page-item"><a class="page-link" href="#kleiner-stern-cd" data-slide="next">Nächstes Bild</a></li>
+									</ul>
+								  </nav>
+							</div>
+
+							<div class="card-footer">
+
+
+								<div class="accordion" id="Buch_7">
+
+									<div class="accordion-item">
+										
+										<!-- Titel -->
+										<h2 class="accordion-header" id="Buchtitel_7">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beschreibung_7" aria-expanded="false" aria-controls="beschreibung_7">
+												Astrid Bihari liest Kleiner Stern und 12 Gedichte (CD)
+											</button>
+										</h2>
+
+									<!-- Beschreibung-->
+										<div id="beschreibung_7" class="accordion-collapse collapse" aria-labelledby="beschreibung_7" data-bs-parent="#beschreibung_7">
+											<div class="accordion-body">
+												<h5>
+													Von Astrid Bihari
+												</h5>
+												<h5>
+													Kleiner Stern
+												</h5>
+												<p>
+													Aus einem Lächeln Gottes entsteht am Beginn der Welten
+													ein kleiner Stern, der eine große Aufgabe zu erfüllen hat.
+													Er muß jedoch viele Erfahrungen machen, bevor er als
+													strahlender Stern der Verheißung über den Hirtenfeldern
+													von Bethlehem leuchten kann.
+													Die Erzählung vom kleinen Stern ist nicht nur eine
+													Weihnachtsgeschichte, sondern eignet sich für alle
+													Gelegenheiten, wenn man Trost nötig hat oder jemandem
+													eine Freude machen möchte.
+												</p>
+												<h5>
+													Eines Herzens Lied
+												</h5>
+												<p>
+													Diese zwölf Gedichte sind eine Auswahl aus dem
+													Lyrikband „Eines Herzens Lied“. Das vielbeachtete Buch
+													beschenkt den Leser immer wieder durch die Schönheit der
+													Gedanken und der Sprache. Wer je eine Lesung von Astrid
+													Bihari gehört hat, weiß, wie gut sie ihre Werke auch
+													sprachlich zu gestalten versteht.
+												</p>
+												<h4>
+													12.50€
+												</h4>
+												<p>
+													ISBN: 3-9802176-9-8
+												</p>
+											</div>
+										</div>
+										</div>
+								  </div>
+							</div>
+						  </div>
+						</div>
+						<!--- Ende -->
 
 
 			</div>
